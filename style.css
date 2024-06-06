@@ -1,0 +1,34 @@
+.bg-image {
+  background-image: url(Images/Home_Background.jpg);
+  background-size: 100% 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.location-image {
+  background-image: url(Images/Location.jpg);
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+
+.background {
+  background-color: dodgerblue;
+}
+
+.reviews, .tutors, .contactinput {
+  background-color: lightgray;
+}
+
+.aboutustext {
+  font-size: 20px;
+}
+
+.ReservationText {
+  font-size: 28px;
+}
+
+.ReservationConfirmedText {
+  font-size: 24px;
+}
