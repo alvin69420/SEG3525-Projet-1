@@ -8,10 +8,12 @@ var endtimes;
 var firstname;
 var lastname;
 var email;
+var levels;
 
 function storeReservationInfo() {
     sessionStorage.setItem('subject', document.querySelector('#subject').value);
     sessionStorage.setItem('tutor', document.querySelector('#tutor').value);
+    sessionStorage.setItem('level', document.querySelector('#level').value);
     sessionStorage.setItem('starttime', document.querySelector('#starttime').value);
     sessionStorage.setItem('endtime', document.querySelector('#endtime').value);
     sessionStorage.setItem('date', document.querySelector('#date').value);
@@ -57,11 +59,13 @@ function fillReservationPage() {
     firstname = sessionStorage.getItem('firstname');
     lastname = sessionStorage.getItem('lastname');
     email = sessionStorage.getItem('email');
+    levels = sessionStorage.getItem('level');
     
     
     document.getElementById('reservationSubject').innerHTML += subjects;
     document.getElementById('reservationTutor').innerHTML += tutors;
     document.getElementById('reservationDateAndTime').innerHTML += dates + " from " + starttimes + " to " + endtimes;
+    document.getElementById('reservationLevel').innerHTML += levels;
     document.getElementById('reservationProficiency').innerHTML += proficiencies;
     document.getElementById('reservationTeachingMethod').innerHTML += methods;
     document.getElementById('reservationClientName').innerHTML += firstname + " " + lastname;
